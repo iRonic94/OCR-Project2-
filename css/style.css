@@ -6,11 +6,13 @@
 :root {
     --main-color: #0065FC;
     --black-color: #000000;
+    --white-color: #fff;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
+.fa-solid,
+.fa-regular {
     color: var(--main-color);
 }
 
@@ -23,6 +25,13 @@ body {
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+/*direct children of main container*/
+.main-container>section {
+    display: flex;
+    align-items: center;
+    margin-block-start: 20px;
 }
 
 /****** Header ***********/
@@ -166,4 +175,75 @@ header {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Search section ***********/
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+}
+
+input.search-input {
+    height: 40px;
+    border: 1px solid #F2F2F2;
+    padding: 5px;
+}
+
+button.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0 10px 10px 0;
+    width: 60px;
+    height: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.fa-location-dot {
+    color: var(--black-color);
+}
+
+/****** Filters section ***********/
+.filters-buttons,
+.info-bar,
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button.filter-button {
+    border-radius: 25px;
+    border: 1px solid #D9D9D9;
+    width: 130px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: white;
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    width: 25px;
+    height: 25px;
+    font-size: 0.8em;
 }
