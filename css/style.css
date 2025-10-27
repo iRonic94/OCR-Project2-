@@ -28,17 +28,7 @@ body {
     margin: 0 auto;
 }
 
-.main-container>section {
-    display: flex;
-    align-items: center;
-    margin-block-start: 20px;
-}
-
-/****** Header ***********/
-header {
-    margin-bottom: 30px;
-}
-
+/****** Navigation ***********/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -62,7 +52,8 @@ header {
     position: relative;
 }
 
-.navbar-link {
+.navbar-accommodation,
+.navbar-activities {
     display: block;
     text-decoration: none;
     color: var(--black-color);
@@ -71,11 +62,11 @@ header {
     transition: color 0.3s ease;
 }
 
-.navbar-link:hover {
+.navbar-accommodation {
     color: var(--main-color);
 }
 
-.navbar-link:hover::before {
+li:first-child::before {
     content: '';
     position: absolute;
     top: 0;
@@ -83,6 +74,26 @@ header {
     right: 0;
     height: 2px;
     background-color: var(--main-color);
+}
+
+/****** Search & Welcome section  ***********/
+.search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/****** Accommodation And Popular ***********/
+.accommodation-and-popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodation-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .section-title {
@@ -113,36 +124,23 @@ header {
     color: var(--main-bg-color)
 }
 
-
-/****** Accommodation And Popular ***********/
-.accommodation-and-popular {
-    display: flex;
-    justify-content: space-between;
-}
-
-.accommodation-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
 /****** Accommodation ***********/
 .accommodation {
     width: 65%;
 }
 
 .accommodation-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
     gap: 30px;
-    margin: 33px 0px 33px 0;
+    margin: 20px 0px 20px 0;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .accommodation-cards .card {
     display: flex;
     flex-direction: column;
+    width: 200px;
 }
 
 .accommodation-cards img {
@@ -156,7 +154,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 15px;
+    gap: 10px;
+    padding: 5px 15px 0 15px;
     flex-grow: 1;
 }
 
