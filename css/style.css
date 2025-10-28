@@ -19,6 +19,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -325,4 +326,28 @@ button.filter-button {
     padding: 0px 0px 0px 20px;
     align-items: center;
     justify-content: flex-start;
+}
+
+/****** Footer section ***********/
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--main-bg-color);
+    padding: 10px 0px 20px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.about,
+.our-accomodation,
+.support {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about h3,
+.our-accomodation h3,
+.support h3 {
+    margin: 0;
 }
