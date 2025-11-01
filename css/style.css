@@ -452,7 +452,7 @@ button.filter-button {
     }
 
     input.search-input {
-        width: 230px;
+        width: 100%;
     }
 
     .search-button i {
