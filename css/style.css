@@ -504,12 +504,8 @@ button.filter-button {
     }
 
     .activities img {
-        height: 350px !important;
-        object-fit: cover !important;
-    }
-
-    .activites-card {
-        width: 100%;
+        height: 350px;
+        object-fit: cover;
     }
 
     .footer-section {
