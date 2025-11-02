@@ -472,7 +472,7 @@ button.filter-button {
     .accommodation-and-popular section {
         width: 100%;
         box-sizing: border-box;
-        padding: 10px 20px 10px 10px;
+        padding: 10px 20px 10px 20px;
         border-radius: 0px;
     }
 
@@ -490,10 +490,6 @@ button.filter-button {
 
     .accommodation-cards {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .accommodation-cards .card {
-        width: 100%;
     }
 
     .activites-cards {
