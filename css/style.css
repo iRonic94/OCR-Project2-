@@ -450,7 +450,7 @@ button.filter-button {
     }
 
     input.search-input {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .search-button i {
@@ -470,7 +470,7 @@ button.filter-button {
     }
 
     .accommodation-and-popular section {
-        width: 100%;
+        /* width: 100%; */
         box-sizing: border-box;
         padding: 10px 20px 10px 20px;
         border-radius: 0px;
