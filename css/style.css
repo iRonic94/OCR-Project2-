@@ -413,7 +413,6 @@ button.filter-button {
     .navbar-menu {
         display: grid;
         grid-template-columns: repeat(2, 200px);
-        width: 100%;
     }
 
     li:first-child::before {
@@ -433,7 +432,6 @@ button.filter-button {
     .filters-buttons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
         justify-items: center;
     }
 
@@ -472,6 +470,8 @@ button.filter-button {
     }
 
     .accommodation-and-popular section {
+        width: 100%;
+        box-sizing: border-box;
         padding: 10px 20px 10px 10px;
         border-radius: 0px;
     }
@@ -482,10 +482,6 @@ button.filter-button {
 
     .popular-cards {
         flex-direction: column;
-    }
-
-    .popular {
-        width: 100%;
     }
 
     section.accommodation {
