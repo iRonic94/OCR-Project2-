@@ -398,7 +398,7 @@ button.filter-button {
 @media screen and (max-width: 768px) {
     .main-container {
         padding: 0px;
-        min-width: 476px;
+        max-width: 476px;
     }
 
     .navbar {
@@ -411,7 +411,8 @@ button.filter-button {
 
     .navbar-menu {
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 
     li:first-child::before {
@@ -434,13 +435,14 @@ button.filter-button {
         justify-items: center;
     }
 
+
+    button.filter-button {
+        max-width: 100%;
+    }
+
     .filters {
         align-items: stretch;
         flex-direction: column;
-    }
-
-    button.filter-button {
-        width: 200px;
     }
 
     .search-section {
@@ -495,7 +497,7 @@ button.filter-button {
     }
 
     .activites-card {
-        width: 400px;
+        max-width: 400px;
     }
 
     .activites img {
