@@ -303,7 +303,7 @@ button.filter-button {
 
 /****** activites section ***********/
 .activites {
-    padding: 30px;
+    padding: 20px;
 }
 
 .activites img {
@@ -314,8 +314,8 @@ button.filter-button {
 
 .activites-cards {
     display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .activites-card {
@@ -369,32 +369,37 @@ button.filter-button {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1280px) {
     .accommodation-and-popular {
-        display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .accommodation,
     .popular {
-        width: 96%;
-    }
-
-    .popular-cards .card {
         width: 100%;
     }
 
-    .popular-cards {
-        display: flex;
+    .activites-card {
+        max-width: 300px;
+    }
+
+    .accommodation-cards img {
+        max-height: 100px;
+    }
+
+    .activites-cards {
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
     }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .main-container {
         padding: 0px;
-        max-width: 476px;
+        max-width: 600px;
     }
 
     .navbar {
@@ -490,6 +495,7 @@ button.filter-button {
     .activites-cards {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .activites-card {
@@ -497,7 +503,7 @@ button.filter-button {
     }
 
     .activites img {
-        height: 350px;
+        height: 250px;
         object-fit: cover;
     }
 
