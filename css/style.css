@@ -526,12 +526,8 @@ button.filter-button {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        justify-items: stretch;
         justify-content: center;
-    }
-
-    .activites-card {
-        width: auto;
+        justify-items: center;
     }
 
     .activites img {
