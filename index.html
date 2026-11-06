@@ -19,7 +19,7 @@
         <header>
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <img src="./images/logo/Booki.png" alt="Booki" class="logo">
+                    <a href="#"><img src="./images/logo/Booki.png" alt="Booki" class="logo"></a>
                 </div>
                 <ul class="navbar-menu">
                     <li><a href="#accommodation" class="navbar-accommodation">Accommodation</a></li>
@@ -48,20 +48,20 @@
                 <h3 class="filters-title">Filters</h3>
                 <div class="filters-buttons">
                     <button class="filter-button">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span>Budget</span>
+                        <span class="filter-icon"><i class="fa-solid fa-money-bill-wave"></i></span>
+                        <span>Low cost</span>
                     </button>
                     <button class="filter-button">
-                        <i class="fa-solid fa-person"></i>
-                        <span>Family-Friendly</span>
+                        <span class="filter-icon"><i class="fa-solid fa-person"></i></span>
+                        <span>Family-friendly</span>
                     </button>
                     <button class="filter-button">
-                        <i class="fa-solid fa-heart"></i>
+                        <span class="filter-icon"><i class="fa-solid fa-heart"></i></span>
                         <span>Romantic</span>
                     </button>
                     <button class="filter-button">
-                        <i class="fa-solid fa-fire"></i>
-                        <span>Our Top Picks</span>
+                        <span class="filter-icon"><i class="fa-solid fa-dog"></i></span>
+                        <span>Pets allowed</span>
                     </button>
                 </div>
             </div>
@@ -73,7 +73,7 @@
         <main>
             <div class="accommodation-and-popular" id="accommodation">
                 <section class="accommodation">
-                    <h2 class="section-title">Marseille Accommodation</h2>
+                    <h2 class="section-title">Accommodation in Marseille</h2>
                     <div class="accommodation-cards">
                         <a href="#fred-kleber" class="card">
                             <article>
@@ -197,7 +197,7 @@
                 <section class="popular">
                     <div class="popular-title">
                         <h2 class="section-title">Most popular</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <i class="fa-solid fa fa-star color-black" aria-hidden="true"></i>
                     </div>
                     <div class="popular-cards">
                         <article class="card">
@@ -255,60 +255,85 @@
                     </div>
                 </section>
             </div>
-            <div class="activites" id="thingstodo">
-                <h2>Things to Do in Marseille</h2>
-                <div class="activites-cards">
-                    <a href="#EiffelTower" class="activites-card">
-                        <article>
-                            <img src="./images/activites/EiffelTower.jpg" alt="Image of Eiffel Tower">
-                            <div class="activites-card-txt">
-                                <h3 class="card-title">Eiffel Tower</h3>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#Louvre" class="activites-card">
-                        <article>
-                            <img src="./images/activites/Louvre.jpg" alt="Image of Louvre">
-                            <div class="activites-card-txt">
-                                <h3 class="card-title">Louvre</h3>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#Monmartre" class="activites-card">
-                        <article>
-                            <img src="./images/activites/Montmartre.jpg" alt="Image of Monmartre">
-                            <div class="activites-card-txt">
-                                <h3 class="card-title">Monmartre</h3>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="#Notredame" class="activites-card">
-                        <article>
-                            <img src="./images/activites/Notredame.jpg" alt="Image of Notre dame">
-                            <div class="activites-card-txt">
-                                <h3 class="card-title">Notre dame</h3>
-                            </div>
-                        </article>
-                    </a>
+            <div class="activities" id="thingstodo">
+                <h2>Activities in Marseille</h2>
+                <div class="activities-container">
+                        <div class="activities-card">
+                            <a href="#reno-laithienne" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/reno-laithienne.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+                    </div>
+                        <div class="activities-card">
+                            <a href="#paul-hermann" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/paul-hermann.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+                            <a href="#kevin-hikari" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/kevin-hikari.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+                    </div>
+                        <div class="activities-card">
+                            <a href="#kilyan-sockalingum" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+
+                    </div>
+                         <div class="activities-card">
+                            <a href="#florian-wehde" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/florian-wehde.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+                            <a href="#lena-paulin" class="activities-card">
+                                <article>
+                                    <img src="./images/activites/lena-paulin.jpg" alt="Image of Eiffel Tower">
+                                <div class="activities-card-txt">
+                                    <h3 class="card-title">Eiffel Tower</h3>
+                                </div>
+                                </article>
+                            </a>
+                    </div>
                 </div>
         </main>
         <footer>
             <div class="footer-section">
                 <div class="about">
                     <h3>About</h3>
-                    <span>Using the Website</span>
-                    <span>Terms and Conditions</span>
-                    <span>Data and Privacy</span>
+                    <span id="link">Using the Website</span>
+                    <span id="link">Terms and Conditions</span>
+                    <span id="link">Data and Privacy</span>
                 </div>
                 <div class="our-accomodation">
                     <h3>Our Accommodation</h3>
-                    <span>Our Quality Promise</span>
-                    <span>Add Your Hotel</span>
+                    <span id="link">Our Quality Promise</span>
+                    <span id="link">Add Your Hotel</span>
                 </div>
                 <div class="support">
                     <h3>Support</h3>
-                    <span>Help Center</span>
-                    <span>Contact Us</span>
+                    <span id="link">Help Center</span>
+                    <span id="link">Contact Us</span>
                 </div>
             </div>
         </footer>
