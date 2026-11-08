@@ -29,7 +29,7 @@ body {
 }
 
 .main-container {
-    width: 100%;
+    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -376,6 +376,7 @@ button.filter-button {
     flex:1 1 0;
     width:100%;
     min-height: 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
@@ -576,7 +577,7 @@ button.filter-button {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .activities-cards {
+    .activities-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
