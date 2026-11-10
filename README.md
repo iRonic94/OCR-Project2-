@@ -1,1 +1,1 @@
-# booki-starter-pack
+Hosted on github: https://ironic94.github.io/OCR-Project2-/
