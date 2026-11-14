@@ -596,6 +596,8 @@ button.filter-button {
     button.search-button {
         box-shadow: 0px 0px 5px 2px #00000033;
         border-radius: 15px;
+        border-radius: 0 10px 10px 0;
+        height: 55px;
     }
 
     .accommodation-and-popular section {
